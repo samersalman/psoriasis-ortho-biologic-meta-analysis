@@ -1,0 +1,17 @@
+# Byte-preserving checkout on every platform.
+#
+# `* -text` disables git's end-of-line conversion for every file in this repository:
+# nothing is normalised on commit and nothing is rewritten on checkout, so a working
+# tree is byte-for-byte what was deposited.
+#
+# This matters because the deposit is verified by checksum. README.md tells a reader to
+# run `shasum -a 256 -c MANIFEST.sha256` before reproducing the analysis. On Windows,
+# git's default `core.autocrlf=true` would rewrite line endings at checkout, changing the
+# bytes of every LF file and so its SHA-256 digest. Each rewritten file would then fail
+# the manifest check, which reads as a corrupted download rather than as a platform
+# artefact. This line prevents that.
+#
+# Do not replace this with per-extension `text`/`eol` rules: any rule that normalises
+# line endings reintroduces the same failure.
+
+* -text

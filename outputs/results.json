@@ -1,0 +1,740 @@
+{
+  "meta": {
+    "project": "Perioperative biologic/tsDMARD management in psoriasis/PsA orthopedic surgery",
+    "role": "Meta-analysis + GRADE",
+    "engine": "R",
+    "R_version": "R version 4.6.0 (2026-04-24)",
+    "packages": {
+      "metafor": "5.0.1",
+      "jsonlite": "2.0.0"
+    },
+    "primary_model": "Random-effects (REML) via metafor::rma",
+    "or_convention": "OR = odds of SSI/wound (or flare) in CONTINUE vs DISCONTINUE arm; OR>1 favours discontinuation (more events with continuation), OR<1 favours continuation.",
+    "proportion_transform": "Primary logit (measure='PLO'); sensitivity Freeman-Tukey double-arcsine (measure='PFT')",
+    "date_run": "2026-07-24",
+    "overlap_rule_asserted_pass": true,
+    "input": "extraction/poolable_dataset.csv",
+    "notes": "Berthold discontinue arm = 28/872 primary (25/872 sensitivity). Fabiano continue arm = 1/87 primary (Table 2) with 0/87 as sensitivity (narrative text), continuity-corrected by escalc (add=1/2, to=only0). George = recent-IFX (<4wk) proxy primary; whole-cohort alternatives as sensitivity. All numbers trace to this file; Figures 3/4 and Table 3 reflect these exactly."
+  },
+  "analyses": {
+    "MA1_SSI": {
+      "analysis": "MA1_SSI",
+      "description": "Comparative: continuation vs discontinuation of biologic/tsDMARD -> composite surgical-site infection / wound complication. Primary: random-effects (REML) odds ratio.",
+      "interpretation": "The primary RE (REML) OR (0.50) is MODEL-DEPENDENT: REML down-weights the large Berthold study via tau2, while fixed-effect/Mantel-Haenszel/Peto all give ~0.97 (null). ALL estimates cross OR=1. Defensible conclusion: NO evidence that continuation increases SSI/wound risk (not a proven protective effect). Certainty Very Low.",
+      "studies": ["Bakkour 2016", "Berthold 2013", "Fabiano 2014", "Nguyen 2021"],
+      "measure": "OR",
+      "model": "random-effects (REML)",
+      "primary": {
+        "k": 4,
+        "pooled_OR": 0.5022,
+        "ci_low": 0.1626,
+        "ci_high": 1.5511,
+        "I2": 75.3,
+        "tau2": 0.8885,
+        "H2": 4.048,
+        "Q": 13.795,
+        "Q_df": 3,
+        "Q_pval": 0.0032,
+        "prediction_interval": {
+          "pi_low": 0.0577,
+          "pi_high": 4.3743
+        }
+      },
+      "per_study": [
+        {
+          "study": "Bakkour 2016",
+          "events_continue": 3,
+          "n_continue": 57,
+          "events_discontinue": 5,
+          "n_discontinue": 20,
+          "OR": 0.1667,
+          "ci_low": 0.0357,
+          "ci_high": 0.7786,
+          "weight_pct": 21.97
+        },
+        {
+          "study": "Berthold 2013",
+          "events_continue": 35,
+          "n_continue": 681,
+          "events_discontinue": 28,
+          "n_discontinue": 872,
+          "OR": 1.6331,
+          "ci_low": 0.9832,
+          "ci_high": 2.7126,
+          "weight_pct": 34.64
+        },
+        {
+          "study": "Fabiano 2014",
+          "events_continue": 1,
+          "n_continue": 87,
+          "events_discontinue": 2,
+          "n_discontinue": 44,
+          "OR": 0.2442,
+          "ci_low": 0.0215,
+          "ci_high": 2.7701,
+          "weight_pct": 13.66
+        },
+        {
+          "study": "Nguyen 2021",
+          "events_continue": 9,
+          "n_continue": 142,
+          "events_discontinue": 11,
+          "n_discontinue": 76,
+          "OR": 0.3999,
+          "ci_low": 0.1578,
+          "ci_high": 1.013,
+          "weight_pct": 29.73
+        }
+      ],
+      "sensitivity": {
+        "fixed_effect": {
+          "model": "FE OR",
+          "pooled_OR": 0.9739,
+          "ci_low": 0.639,
+          "ci_high": 1.4843
+        },
+        "mantel_haenszel": {
+          "model": "Mantel-Haenszel OR (no continuity correction to cells)",
+          "pooled_OR": 0.9755,
+          "ci_low": 0.6477,
+          "ci_high": 1.4693,
+          "I2": 78.3,
+          "Q_pval": 0.0032
+        },
+        "peto": {
+          "model": "Peto OR",
+          "pooled_OR": 0.9734,
+          "ci_low": 0.6353,
+          "ci_high": 1.4916,
+          "I2": 80.2,
+          "Q_pval": 0.0017
+        },
+        "glmm": {
+          "model": "Binomial-normal GLMM (UM.FS)",
+          "pooled_OR": 0.5276,
+          "ci_low": 0.1884,
+          "ci_high": 1.4779,
+          "I2": 67.4
+        },
+        "berthold_25": {
+          "model": "REML OR, Berthold discontinue=25/872",
+          "pooled_OR": 0.5122,
+          "ci_low": 0.1569,
+          "ci_high": 1.6721,
+          "I2": 77.3
+        },
+        "fabiano_0": {
+          "model": "REML OR, Fabiano continue=0/87 (continuity correction add=1/2, to=only0)",
+          "pooled_OR": 0.4525,
+          "ci_low": 0.1316,
+          "ci_high": 1.5559,
+          "I2": 78.1
+        },
+        "exclude_berthold": {
+          "model": "REML OR, Berthold excluded (overlap robustness)",
+          "k": 3,
+          "studies": ["Bakkour 2016", "Fabiano 2014", "Nguyen 2021"],
+          "pooled_OR": 0.3088,
+          "ci_low": 0.1449,
+          "ci_high": 0.6578,
+          "I2": 0,
+          "tau2": 0
+        },
+        "leave_one_out": [
+          {
+            "omitted": "Bakkour 2016",
+            "pooled_OR": 0.7039,
+            "ci_low": 0.2165,
+            "ci_high": 2.2887,
+            "I2": 74
+          },
+          {
+            "omitted": "Berthold 2013",
+            "pooled_OR": 0.3088,
+            "ci_low": 0.1449,
+            "ci_high": 0.6578,
+            "I2": 0
+          },
+          {
+            "omitted": "Fabiano 2014",
+            "pooled_OR": 0.551,
+            "ci_low": 0.149,
+            "ci_high": 2.0378,
+            "I2": 83.3
+          },
+          {
+            "omitted": "Nguyen 2021",
+            "pooled_OR": 0.5034,
+            "ci_low": 0.1006,
+            "ci_high": 2.5189,
+            "I2": 74.6
+          }
+        ],
+        "subgroup_pure_vs_mixed": {
+          "pure_PsO_PsA": {
+            "studies": ["Bakkour 2016", "Fabiano 2014"],
+            "pooled_OR": 0.186,
+            "ci_low": 0.0506,
+            "ci_high": 0.6834
+          },
+          "mixed": {
+            "studies": ["Berthold 2013", "Nguyen 2021"],
+            "pooled_OR": 0.8547,
+            "ci_low": 0.2162,
+            "ci_high": 3.3791
+          },
+          "test_of_subgroup_diff_pval": 0.1469
+        }
+      }
+    },
+    "MA2_flare": {
+      "analysis": "MA2_flare",
+      "description": "Comparative: continuation vs discontinuation -> disease flare. EXPLORATORY (only k=2 studies; prediction interval unstable). Vasavada exposure is AGGREGATE immunosuppression, not biologic-isolated (see notes).",
+      "caveat": "k=2: heterogeneity and prediction interval are unstable and not interpretable; report point estimate with caution. Nguyen excluded (no continued-arm flare count -> no valid pair).",
+      "studies": ["Bakkour 2016", "Vasavada 2023"],
+      "measure": "OR",
+      "model": "random-effects (REML)",
+      "primary": {
+        "k": 2,
+        "pooled_OR": 0.3891,
+        "ci_low": 0.0622,
+        "ci_high": 2.4347,
+        "I2": 81.6,
+        "tau2": 1.4327,
+        "H2": 5.421,
+        "Q": 5.421,
+        "Q_df": 1,
+        "Q_pval": 0.0199,
+        "prediction_interval": {
+          "pi_low": 0.0198,
+          "pi_high": 7.6425
+        }
+      },
+      "per_study": [
+        {
+          "study": "Bakkour 2016",
+          "events_continue": 5,
+          "n_continue": 57,
+          "events_discontinue": 8,
+          "n_discontinue": 20,
+          "OR": 0.1442,
+          "ci_low": 0.04,
+          "ci_high": 0.5196,
+          "weight_pct": 47.06
+        },
+        {
+          "study": "Vasavada 2023",
+          "events_continue": 10,
+          "n_continue": 110,
+          "events_discontinue": 10,
+          "n_discontinue": 104,
+          "OR": 0.94,
+          "ci_low": 0.3744,
+          "ci_high": 2.3603,
+          "weight_pct": 52.94
+        }
+      ],
+      "sensitivity": {
+        "fixed_effect": {
+          "model": "FE OR",
+          "pooled_OR": 0.4966,
+          "ci_low": 0.2351,
+          "ci_high": 1.049
+        },
+        "peto": {
+          "model": "Peto OR",
+          "pooled_OR": 0.4786,
+          "ci_low": 0.2239,
+          "ci_high": 1.0232
+        }
+      }
+    },
+    "MA3_SSIprop": {
+      "analysis": "MA3_SSIprop",
+      "description": "Single-arm pooled SSI/wound-complication proportion among CONTINUERS. Primary: logit-transformed proportion (REML). George = recent-IFX <4wk (serious/hospitalized infection within 30d, not SSI-specific).",
+      "studies": ["Bakkour 2016", "Berthold 2013", "Fabiano 2014", "George 2017", "Nguyen 2021"],
+      "measure": "proportion",
+      "model": "random-effects (REML), logit transform",
+      "primary": {
+        "k": 5,
+        "pooled_prop": 0.0567,
+        "ci_low": 0.0475,
+        "ci_high": 0.0675,
+        "pooled_pct": 5.67,
+        "pct_ci_low": 4.75,
+        "pct_ci_high": 6.75,
+        "I2": 0,
+        "tau2": 0,
+        "Q": 3.434,
+        "Q_df": 4,
+        "Q_pval": 0.488,
+        "prediction_interval": {
+          "pi_low": 0.0475,
+          "pi_high": 0.0675,
+          "pi_low_pct": 4.75,
+          "pi_high_pct": 6.75
+        }
+      },
+      "per_study": [
+        {
+          "study": "Bakkour 2016",
+          "events": 3,
+          "n": 57,
+          "proportion": 0.0526,
+          "pct": 5.26,
+          "ci_low": 0.0171,
+          "ci_high": 0.1509,
+          "weight_pct": 2.56
+        },
+        {
+          "study": "Berthold 2013",
+          "events": 35,
+          "n": 681,
+          "proportion": 0.0514,
+          "pct": 5.14,
+          "ci_low": 0.0371,
+          "ci_high": 0.0707,
+          "weight_pct": 29.85
+        },
+        {
+          "study": "Fabiano 2014",
+          "events": 1,
+          "n": 87,
+          "proportion": 0.0115,
+          "pct": 1.15,
+          "ci_low": 0.0016,
+          "ci_high": 0.0771,
+          "weight_pct": 0.89
+        },
+        {
+          "study": "George 2017",
+          "events": 70,
+          "n": 1162,
+          "proportion": 0.0602,
+          "pct": 6.02,
+          "ci_low": 0.0479,
+          "ci_high": 0.0755,
+          "weight_pct": 59.13
+        },
+        {
+          "study": "Nguyen 2021",
+          "events": 9,
+          "n": 142,
+          "proportion": 0.0634,
+          "pct": 6.34,
+          "ci_low": 0.0333,
+          "ci_high": 0.1173,
+          "weight_pct": 7.58
+        }
+      ],
+      "sensitivity": {
+        "freeman_tukey": {
+          "model": "Freeman-Tukey double-arcsine (PFT)",
+          "pooled_prop": 0.0525,
+          "pooled_pct": 5.25,
+          "ci_low": 0.0431,
+          "ci_high": 0.0628,
+          "pct_ci_low": 4.31,
+          "pct_ci_high": 6.28,
+          "I2": 0.4
+        },
+        "exclude_berthold": {
+          "model": "logit, Berthold excluded (overlap robustness)",
+          "k": 4,
+          "studies": ["Bakkour 2016", "Fabiano 2014", "George 2017", "Nguyen 2021"],
+          "pooled_pct": 5.91,
+          "pct_ci_low": 4.79,
+          "pct_ci_high": 7.27,
+          "I2": 0
+        },
+        "george_whole_cohort": {
+          "model": "logit, George=270/4288 whole-cohort serious infection",
+          "pooled_pct": 6,
+          "pct_ci_low": 5.19,
+          "pct_ci_high": 6.92,
+          "I2": 7.8
+        },
+        "leave_one_out": [
+          {
+            "omitted": "Bakkour 2016",
+            "pooled_pct": 5.68,
+            "pct_ci_low": 4.75,
+            "pct_ci_high": 6.77,
+            "I2": 0
+          },
+          {
+            "omitted": "Berthold 2013",
+            "pooled_pct": 5.91,
+            "pct_ci_low": 4.79,
+            "pct_ci_high": 7.27,
+            "I2": 0
+          },
+          {
+            "omitted": "Fabiano 2014",
+            "pooled_pct": 5.75,
+            "pct_ci_low": 4.81,
+            "pct_ci_high": 6.84,
+            "I2": 0
+          },
+          {
+            "omitted": "George 2017",
+            "pooled_pct": 5.19,
+            "pct_ci_low": 3.93,
+            "pct_ci_high": 6.82,
+            "I2": 0
+          },
+          {
+            "omitted": "Nguyen 2021",
+            "pooled_pct": 5.61,
+            "pct_ci_low": 4.67,
+            "pct_ci_high": 6.73,
+            "I2": 0
+          }
+        ]
+      }
+    },
+    "MA3_PJIprop": {
+      "analysis": "MA3_PJIprop",
+      "description": "Single-arm pooled periprosthetic-joint-infection proportion. Borgas (TNFi-user), George (recent-IFX <4wk, PJI within 1yr), Nguyen (1/43 arthroplasties). Primary: logit (REML). OVERLAP RULE: Borgas here, NOT Berthold.",
+      "studies": ["Borgas 2020", "George 2017", "Nguyen 2021"],
+      "measure": "proportion",
+      "model": "random-effects (REML), logit transform",
+      "primary": {
+        "k": 3,
+        "pooled_prop": 0.0242,
+        "ci_low": 0.0163,
+        "ci_high": 0.036,
+        "pooled_pct": 2.42,
+        "pct_ci_low": 1.63,
+        "pct_ci_high": 3.6,
+        "I2": 2.3,
+        "tau2": 0.0128,
+        "Q": 1.939,
+        "Q_df": 2,
+        "Q_pval": 0.3792,
+        "prediction_interval": {
+          "pi_low": 0.0154,
+          "pi_high": 0.038,
+          "pi_low_pct": 1.54,
+          "pi_high_pct": 3.8
+        }
+      },
+      "per_study": [
+        {
+          "study": "Borgas 2020",
+          "events": 1,
+          "n": 157,
+          "proportion": 0.0064,
+          "pct": 0.64,
+          "ci_low": 0.0009,
+          "ci_high": 0.0438,
+          "weight_pct": 4.23
+        },
+        {
+          "study": "George 2017",
+          "events": 30,
+          "n": 1162,
+          "proportion": 0.0258,
+          "pct": 2.58,
+          "ci_low": 0.0181,
+          "ci_high": 0.0367,
+          "weight_pct": 91.62
+        },
+        {
+          "study": "Nguyen 2021",
+          "events": 1,
+          "n": 43,
+          "proportion": 0.0233,
+          "pct": 2.33,
+          "ci_low": 0.0033,
+          "ci_high": 0.1475,
+          "weight_pct": 4.16
+        }
+      ],
+      "sensitivity": {
+        "freeman_tukey": {
+          "model": "Freeman-Tukey double-arcsine (PFT)",
+          "pooled_prop": 0.0171,
+          "pooled_pct": 1.71,
+          "ci_low": 0.0059,
+          "ci_high": 0.0326,
+          "pct_ci_low": 0.59,
+          "pct_ci_high": 3.26,
+          "I2": 30.8
+        },
+        "george_whole_cohort": {
+          "model": "logit, George=105/4288 whole-cohort PJI",
+          "pooled_pct": 2.42,
+          "pct_ci_low": 2,
+          "pct_ci_high": 2.91,
+          "I2": 0
+        },
+        "leave_one_out": [
+          {
+            "omitted": "Borgas 2020",
+            "pooled_pct": 2.57,
+            "pct_ci_low": 1.82,
+            "pct_ci_high": 3.64,
+            "I2": 0
+          },
+          {
+            "omitted": "George 2017",
+            "pooled_pct": 1.21,
+            "pct_ci_low": 0.3,
+            "pct_ci_high": 4.73,
+            "I2": 0
+          },
+          {
+            "omitted": "Nguyen 2021",
+            "pooled_pct": 1.8,
+            "pct_ci_low": 0.54,
+            "pct_ci_high": 5.84,
+            "I2": 48.3
+          }
+        ]
+      }
+    },
+    "MA4_flareprop": {
+      "analysis": "MA4_flareprop",
+      "description": "Flare-burden proportions by arm (Bakkour, Vasavada). k=2 per arm (exploratory). Continuers vs discontinuers pooled separately (logit, REML).",
+      "caveat": "k=2 per arm; prediction interval unstable. Vasavada exposure is aggregate immunosuppression, not biologic-isolated.",
+      "continuers": {
+        "studies": ["Bakkour 2016", "Vasavada 2023"],
+        "k": 2,
+        "pooled_prop": 0.0898,
+        "ci_low": 0.0549,
+        "ci_high": 0.1437,
+        "pooled_pct": 8.98,
+        "pct_ci_low": 5.49,
+        "pct_ci_high": 14.37,
+        "I2": 0,
+        "tau2": 0,
+        "Q": 0.005,
+        "Q_df": 1,
+        "Q_pval": 0.9455,
+        "prediction_interval": {
+          "pi_low": 0.0549,
+          "pi_high": 0.1437,
+          "pi_low_pct": 5.49,
+          "pi_high_pct": 14.37
+        },
+        "per_study": [
+          {
+            "study": "Bakkour 2016",
+            "events": 5,
+            "n": 57,
+            "proportion": 0.0877,
+            "pct": 8.77,
+            "ci_low": 0.037,
+            "ci_high": 0.194,
+            "weight_pct": 33.41
+          },
+          {
+            "study": "Vasavada 2023",
+            "events": 10,
+            "n": 110,
+            "proportion": 0.0909,
+            "pct": 9.09,
+            "ci_low": 0.0496,
+            "ci_high": 0.1608,
+            "weight_pct": 66.59
+          }
+        ]
+      },
+      "discontinuers": {
+        "studies": ["Bakkour 2016", "Vasavada 2023"],
+        "k": 2,
+        "pooled_prop": 0.2059,
+        "ci_low": 0.0412,
+        "ci_high": 0.6102,
+        "pooled_pct": 20.59,
+        "pct_ci_low": 4.12,
+        "pct_ci_high": 61.02,
+        "I2": 90.5,
+        "tau2": 1.5246,
+        "Q": 10.559,
+        "Q_df": 1,
+        "Q_pval": 0.0012,
+        "prediction_interval": {
+          "pi_low": 0.0126,
+          "pi_high": 0.8409,
+          "pi_low_pct": 1.26,
+          "pi_high_pct": 84.09
+        },
+        "per_study": [
+          {
+            "study": "Bakkour 2016",
+            "events": 8,
+            "n": 20,
+            "proportion": 0.4,
+            "pct": 40,
+            "ci_low": 0.2142,
+            "ci_high": 0.6199,
+            "weight_pct": 48.55
+          },
+          {
+            "study": "Vasavada 2023",
+            "events": 10,
+            "n": 104,
+            "proportion": 0.0962,
+            "pct": 9.62,
+            "ci_low": 0.0525,
+            "ci_high": 0.1696,
+            "weight_pct": 51.45
+          }
+        ]
+      }
+    }
+  },
+  "narrative": {
+    "implant_survival": {
+      "study": "Di Martino 2023 (registry cohort, THA)",
+      "finding": "Perioperative TNFi users (n=121) showed 5-year implant survival 96.6%; 3/121 revisions. Non-bDMARD comparator n=870. Comparison unmatched/imbalanced (age, AS%, RA%); revision is an objective ~95%-captured registry endpoint.",
+      "certainty_note": "Serious RoB (confounding + immortal-time selection); narrative only."
+    },
+    "spine_infection": {
+      "study": "Day 2023 (PearlDiver database, single-level lumbar discectomy)",
+      "finding": "Pure-psoriasis cohort matched 1:4. Psoriasis vs non-psoriasis SSI OR 1.795. Biologics subgroup (topicals+biologics, n=140): SSI OR 3.102 (p=.019), sepsis OR 6.367 (p=.027). Exposure is CHRONIC biologic use (recommendation-level), not a perioperative continue-vs-hold decision; no events/N reported for the biologic subgroup (ORs only).",
+      "certainty_note": "Serious RoB (D3 exposure-construct mismatch + confounding by indication). Hypothesis-generating; NOT a perioperative-timing comparison."
+    },
+    "case_reports": {
+      "Koga_2025": "PsA (DAPSA 7.24, low activity), bilateral high tibial osteotomy, adalimumab held 2wk pre-op; no wound infection, no flare, 2-yr functional improvement. High-quality case report (JBI 8/8).",
+      "Kunimi_2018": "PsA mutilans, hand surgery (thumb fusion/contracture release) with infliximab CONTINUED; infection-free, function improved. Moderate quality (letter; vague timing).",
+      "Kawakami_2016": "Case 1 (the ONLY orthopedic case: Achilles tendon repair) had delayed wound healing AND psoriasis flare (PASI ->18.8) DURING an IFX hold, resolving only after restart. Direction of evidence: discontinuation -> flare + delayed healing. (Three uneventful cases were non-orthopedic.)"
+    },
+    "direction_of_evidence": "SSI: continuation not associated with excess SSI/wound complication (in Bakkour and Nguyen the HELD group had numerically MORE complications -> confounding by indication makes the safety of continuation conservative). Flare: interruption associated with flare (Bakkour 40% vs 8.7%; Kawakami ortho case). PJI: sparse, no signal of excess with TNFi continuation. Implant survival: high (Di Martino)."
+  },
+  "grade": {
+    "approach": "GRADE for prognostic/observational body of evidence. All 12 studies non-randomized (no RCTs; RoB-2 not applicable). Baseline certainty LOW; rated down further per outcome. Not rated up (no large effect after controlling for confounding by indication that runs against the safety signal; dose-response not established).",
+    "SSI_wound": {
+      "outcome": "Surgical-site infection / wound complication (continuation vs discontinuation, plus continuer proportion)",
+      "n_studies": 4,
+      "n_participants": 1979,
+      "effect_comparative": "OR 0.50 (95% CI 0.16-1.55)",
+      "effect_proportion_continuers": "5.7% (95% CI 4.8-6.7)",
+      "certainty": "Very low",
+      "starting_certainty": "Low (observational)",
+      "downgrades": [
+        {
+          "domain": "Risk of bias",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Comparative pool dominated by unadjusted / calendar-era designs in mixed cohorts (Berthold, Nguyen = Serious ROBINS-I); Fabiano a case series; only Bakkour adjusted (Moderate). Unblinded outcome adjudication; SSI definitions unvalidated for arthroplasty."
+        },
+        {
+          "domain": "Inconsistency",
+          "direction": "down (I2=75%)",
+          "serious": "serious",
+          "reason": "Directional heterogeneity: Berthold OR>1 while Nguyen/Bakkour/Fabiano OR<1; high I2. Explained partly by confounding by indication (sicker patients preferentially held)."
+        },
+        {
+          "domain": "Indirectness",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "PsA not isolated in the mixed cohorts (RA/IBD-dominated); SSI outcome definitions heterogeneous (CDC-SSI vs 90-day SSTI vs composite wound complication); orthopedic events not isolable by arm; mixed surgery types."
+        },
+        {
+          "domain": "Imprecision",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Sparse events (as few as 1-2 per arm), wide pooled CI crossing the null; small total sample."
+        },
+        {
+          "domain": "Publication bias",
+          "direction": "undetected/unassessable",
+          "serious": "not serious",
+          "reason": "Formally unassessable at k<10; funnel/Egger underpowered and not rendered."
+        }
+      ],
+      "direction_note": "Certainty is Very Low. The direction is consistent in three of the four studies, but confounding by indication most likely flatters continuation rather than understating its safety, because sicker patients and higher-risk operations were preferentially selected for a hold. The defensible reading is no evidence that continuation increases risk, not evidence of benefit."
+    },
+    "flare": {
+      "outcome": "Disease flare (continuation vs discontinuation)",
+      "n_studies": 2,
+      "n_participants": 291,
+      "effect_comparative": "OR 0.39 (95% CI 0.06-2.43)",
+      "effect_proportion": "continuers 9.0% vs discontinuers 20.6% (pooled, Bakkour+Vasavada)",
+      "certainty": "Very low",
+      "starting_certainty": "Low (observational)",
+      "downgrades": [
+        {
+          "domain": "Risk of bias",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Flare is a subjective, physician-diagnosed, unblinded endpoint (Bakkour, Vasavada both Moderate ROBINS-I; potential under-ascertainment when patients self-manage)."
+        },
+        {
+          "domain": "Indirectness",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Vasavada exposure is AGGREGATE immunosuppression (biologics+csDMARDs+steroids+JAK), not biologic-isolated, and is arthroscopy (lower surgical stress); PsA not isolated. Do not over-read as a clean biologic hold-vs-continue flare contrast."
+        },
+        {
+          "domain": "Imprecision",
+          "direction": "down",
+          "serious": "very serious",
+          "reason": "Only 2 studies, few flare events, wide CI; prediction interval unstable at k=2."
+        }
+      ],
+      "direction_note": "Direction (interruption -> flare) is clinically coherent and consistent with the Kawakami orthopedic case; confounding by indication would understate flare risk in continuers."
+    },
+    "implant_survival": {
+      "outcome": "Implant survival / revision (narrative)",
+      "n_studies": 1,
+      "n_participants": 121,
+      "effect": "5-year THA survival 96.6%; 3/121 revisions in perioperative-TNFi users (Di Martino 2023).",
+      "certainty": "Very low",
+      "starting_certainty": "Low (observational)",
+      "downgrades": [
+        {
+          "domain": "Risk of bias",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Di Martino: unmatched, significantly imbalanced TNFi-vs-non-bDMARD comparison; immortal-time/selection from defining exposure on pre- AND post-operative prescription."
+        },
+        {
+          "domain": "Indirectness",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Exposure = prescription pick-up (chronic use), not a clean perioperative hold; PsA not isolated within a mixed inflammatory-arthritis cohort."
+        },
+        {
+          "domain": "Imprecision",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Single study, only 3 revision events; no pooled estimate."
+        }
+      ],
+      "direction_note": "Objective registry-captured revision endpoint (D6 Low) makes the high survival estimate trustworthy even though the comparison is confounded; narrative/SWiM only."
+    },
+    "PJI": {
+      "outcome": "Periprosthetic joint infection (single-arm proportion)",
+      "n_studies": 3,
+      "n_participants": 1362,
+      "effect": "2.4% (95% CI 1.6-3.6)",
+      "certainty": "Very low",
+      "starting_certainty": "Low (observational)",
+      "downgrades": [
+        {
+          "domain": "Risk of bias",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "Borgas Serious (univariate only, user-vs-non-user, 7 PJI total) and Nguyen Serious; only George Moderate but PJI ICD code unvalidated. No comparative adjustment."
+        },
+        {
+          "domain": "Indirectness",
+          "direction": "down",
+          "serious": "serious",
+          "reason": "PsA not isolated (the single Borgas PsA PJI was on 'None' treatment, not a TNFi user); George PsA/PsO/AS combined covariate; recent-IFX proxy for continuation."
+        },
+        {
+          "domain": "Imprecision",
+          "direction": "down",
+          "serious": "very serious",
+          "reason": "Very sparse events (1/157, 1/43, 30/1162); wide CI; pool dominated by a single study (George)."
+        }
+      ],
+      "direction_note": "No signal of excess PJI with TNFi continuation, but the estimate is dominated by George and is very imprecise."
+    }
+  }
+}

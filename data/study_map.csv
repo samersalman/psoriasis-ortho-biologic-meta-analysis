@@ -1,0 +1,13 @@
+study_id,label,author_year,design,role_in_synthesis,contrast_type,pools
+EMBASE3-0017,Berthold 2013,Berthold 2013,Cohort,Primary comparative SSI + SSI proportion,design-level,MA1_SSI;MA3_SSIprop
+EMBASE2-0014,Nguyen 2021,Nguyen 2021,Cohort,Primary comparative SSI + proportions,design-level,MA1_SSI;MA3_SSIprop;MA3_PJIprop
+EMBASE2-0094,Bakkour 2016,Bakkour 2016,Cohort,Primary comparative SSI + flare,design-level,MA1_SSI;MA2_flare;MA3_SSIprop;MA4_flareprop
+EMBASE3-0011,Fabiano 2014,Fabiano 2014,Case series/cohort,Comparative SSI (small) + JBI,design-level,MA1_SSI;MA3_SSIprop
+EMBASE2-0082,George 2017,George 2017,Claims cohort,Comparative sensitivity (GIV) + PJI/SSI proportion,user-vs-nonuser-timing,MA3_SSIprop;MA3_PJIprop
+PUBMED-0063,Di Martino 2023,Di Martino 2023,Registry cohort,Narrative SWiM implant survival + GRADE,perioperative-TNFi,narrative
+EMBASE1-0073,Vasavada 2023,Vasavada 2023,Cohort,Flare comparative,on-vs-held,MA2_flare;MA4_flareprop
+EMBASE2-0040,Borgas 2020,Borgas 2020,Cohort single-arm,PJI proportion pool (NOT with Berthold),continue-only-user-vs-nonuser,MA3_PJIprop
+PUBMED-0031,Day 2023,Day 2023,Database cohort,Narrative + sensitivity-only,recommendation-level,narrative
+EMBASE2-0091,Kawakami 2016,Kawakami 2016,Case series,Narrative + JBI,discontinued,narrative
+PUBMED-0106,Koga 2025,Koga 2025,Case report,Narrative + JBI,continued,narrative
+PUBMED-0173,Kunimi 2018,Kunimi 2018,Case report,Narrative + JBI,continued,narrative

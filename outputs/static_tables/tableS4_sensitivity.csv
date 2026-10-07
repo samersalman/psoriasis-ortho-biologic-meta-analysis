@@ -1,0 +1,37 @@
+Pool and outcome,Analysis,Studies (k),Pooled estimate (95% CI),I2
+"Infection or wound complications, continue versus hold (MA1)",Primary random-effects model (REML),4,OR 0.50 (95% CI 0.16 to 1.55),75.3%
+"Infection or wound complications, continue versus hold (MA1)","Primary model, 95% prediction interval",4,0.06 to 4.37,Not applicable
+"Infection or wound complications, continue versus hold (MA1)",Fixed-effect model,4,OR 0.97 (95% CI 0.64 to 1.48),Not applicable
+"Infection or wound complications, continue versus hold (MA1)",Mantel-Haenszel model,4,OR 0.98 (95% CI 0.65 to 1.47),78%
+"Infection or wound complications, continue versus hold (MA1)",Peto model,4,OR 0.97 (95% CI 0.64 to 1.49),80%
+"Infection or wound complications, continue versus hold (MA1)",Binomial-normal generalized linear mixed model (UM.FS),4,OR 0.53 (95% CI 0.19 to 1.48),67%
+"Infection or wound complications, continue versus hold (MA1)",Berthold discontinuation arm set to 25 of 872 [a],4,OR 0.51 (95% CI 0.16 to 1.67),77%
+"Infection or wound complications, continue versus hold (MA1)",Fabiano continuation arm set to 0 of 87 [b],4,OR 0.45 (95% CI 0.13 to 1.56),78%
+"Infection or wound complications, continue versus hold (MA1)",Berthold excluded (overlap robustness),3,OR 0.31 (95% CI 0.14 to 0.66),0%
+"Infection or wound complications, continue versus hold (MA1)","Leave-one-out, Bakkour 2016 omitted",3,OR 0.70 (95% CI 0.22 to 2.29),74%
+"Infection or wound complications, continue versus hold (MA1)","Leave-one-out, Berthold 2013 omitted",3,OR 0.31 (95% CI 0.14 to 0.66),0%
+"Infection or wound complications, continue versus hold (MA1)","Leave-one-out, Fabiano 2014 omitted [c]",3,OR 0.55 (95% CI 0.15 to 2.04),83%
+"Infection or wound complications, continue versus hold (MA1)","Leave-one-out, Nguyen 2021 omitted",3,OR 0.50 (95% CI 0.10 to 2.52),75%
+"Infection or wound complications, continue versus hold (MA1)","Subgroup: cohorts confined to psoriasis or PsA (Bakkour 2016, Fabiano 2014)",2,OR 0.19 (95% CI 0.05 to 0.68),Not reported
+"Infection or wound complications, continue versus hold (MA1)","Subgroup: mixed-diagnosis cohorts (Berthold 2013, Nguyen 2021)",2,OR 0.85 (95% CI 0.22 to 3.38),Not reported
+"Infection or wound complications, continue versus hold (MA1)",Test for subgroup difference,4,P = .147,Not applicable
+"Disease flare, continue versus hold (MA2)",Primary random-effects model (REML) [d],2,OR 0.39 (95% CI 0.06 to 2.43),82%
+"Disease flare, continue versus hold (MA2)",Fixed-effect model,2,OR 0.50 (95% CI 0.24 to 1.05),Not applicable
+"Disease flare, continue versus hold (MA2)",Peto model,2,OR 0.48 (95% CI 0.22 to 1.02),Not applicable
+Infection or wound complication proportion among continuers (MA3),Primary logit random-effects model (REML),5,5.7% (95% CI 4.8 to 6.7),0%
+Infection or wound complication proportion among continuers (MA3),Freeman-Tukey double-arcsine transformation,5,5.3% (95% CI 4.3 to 6.3),0.4%
+Infection or wound complication proportion among continuers (MA3),Berthold excluded (overlap robustness),4,5.9% (95% CI 4.8 to 7.3),0%
+Infection or wound complication proportion among continuers (MA3),"George whole-cohort serious infection (270 of 4,288)",5,6.0% (95% CI 5.2 to 6.9),8%
+Infection or wound complication proportion among continuers (MA3),"Leave-one-out, Bakkour 2016 omitted",4,5.7% (95% CI 4.7 to 6.8),0%
+Infection or wound complication proportion among continuers (MA3),"Leave-one-out, Berthold 2013 omitted",4,5.9% (95% CI 4.8 to 7.3),0%
+Infection or wound complication proportion among continuers (MA3),"Leave-one-out, Fabiano 2014 omitted",4,5.7% (95% CI 4.8 to 6.8),0%
+Infection or wound complication proportion among continuers (MA3),"Leave-one-out, George 2017 omitted [e]",4,5.2% (95% CI 3.9 to 6.8),0%
+Infection or wound complication proportion among continuers (MA3),"Leave-one-out, Nguyen 2021 omitted",4,5.6% (95% CI 4.7 to 6.7),0%
+Periprosthetic joint infection proportion (MA3),Primary logit random-effects model (REML),3,2.4% (95% CI 1.6 to 3.6),2%
+Periprosthetic joint infection proportion (MA3),Freeman-Tukey double-arcsine transformation,3,1.7% (95% CI 0.6 to 3.3),31%
+Periprosthetic joint infection proportion (MA3),"George whole-cohort PJI (105 of 4,288)",3,2.4% (95% CI 2.0 to 2.9),0%
+Periprosthetic joint infection proportion (MA3),"Leave-one-out, Borgas 2020 omitted",2,2.6% (95% CI 1.8 to 3.6),0%
+Periprosthetic joint infection proportion (MA3),"Leave-one-out, George 2017 omitted [f]",2,1.2% (95% CI 0.3 to 4.7),0%
+Periprosthetic joint infection proportion (MA3),"Leave-one-out, Nguyen 2021 omitted",2,1.8% (95% CI 0.5 to 5.8),48%
+Disease flare proportion by arm (MA4),"Continuers, primary logit random-effects model (REML)",2,9.0% (95% CI 5.5 to 14.4),0%
+Disease flare proportion by arm (MA4),"Discontinuers, primary logit random-effects model (REML)",2,20.6% (95% CI 4.1 to 61.0),91%

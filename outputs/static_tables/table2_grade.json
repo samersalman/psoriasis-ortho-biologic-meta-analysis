@@ -1,0 +1,61 @@
+{
+ "id": "table2",
+ "number": "Table 2",
+ "title": "GRADE Summary of Findings: certainty of the evidence for perioperative biologic continuation in patients with psoriasis and psoriatic arthritis undergoing orthopaedic surgery.",
+ "orientation": "landscape",
+ "target_document": "main",
+ "columns": [
+  "Outcome",
+  "Studies (participants)",
+  "Pooled effect (95% CI)",
+  "Certainty (GRADE)",
+  "Key footnotes"
+ ],
+ "rows": [
+  [
+   "Infection or wound complications, continue versus hold (OR)",
+   "4 (1,979 analysis units: procedures in 3 studies, patients in 1)",
+   "OR 0.50 (95% CI 0.16 to 1.55)",
+   "Very low",
+   "Downgraded for risk of bias (unadjusted and era-based designs, unblinded SSI adjudication), inconsistency (directional heterogeneity, high I2), indirectness (PsA not isolated, heterogeneous SSI definitions, mixed surgery), and imprecision (sparse events, wide CI). Confounding by indication most likely flatters continuation, because sicker patients and higher-risk operations were preferentially selected for a hold."
+  ],
+  [
+   "Infection or wound complication proportion among continuers (%)",
+   "5 (2,129 analysis units: procedures in 3 studies, surgeries in 1, patients in 1)",
+   "5.7% (95% CI 4.8 to 6.7)",
+   "Very low",
+   "Same body of evidence as row 1, continuer arm. The George numerator is serious or hospitalized infection within 30 days and is not SSI-specific (indirectness)."
+  ],
+  [
+   "Disease flare, continue versus hold (OR)",
+   "2 (291 analysis units: procedures in 1 study, patients in 1)",
+   "OR 0.39 (95% CI 0.06 to 2.43)",
+   "Very low",
+   "Downgraded for risk of bias (subjective, unblinded flare ascertainment), indirectness (Vasavada aggregate immunosuppression and arthroscopy; PsA not isolated), and imprecision (k = 2, few events, unstable prediction interval). Direction: interruption toward more flare."
+  ],
+  [
+   "Disease flare proportion (continuers / discontinuers, %)",
+   "2 (291 analysis units: procedures in 1 study, patients in 1)",
+   "Continuers 9.0% (95% CI 5.5 to 14.4); discontinuers 20.6% (95% CI 4.1 to 61.0)",
+   "Very low",
+   "Bakkour shows a large flare excess with discontinuation (40% versus 8.7%, P = .003); Vasavada shows no difference (aggregate immunosuppression, arthroscopy). k = 2, exploratory."
+  ],
+  [
+   "Periprosthetic joint infection, pooled proportion (%)",
+   "3 (1,362 analysis units: surgeries in 1 study, patients in 1, procedures in 1)",
+   "2.4% (95% CI 1.6 to 3.6)",
+   "Very low",
+   "Downgraded for risk of bias (univariate and underpowered Borgas and Nguyen analyses, unvalidated PJI code), indirectness (PsA not isolated, recent-infliximab proxy), and imprecision (very sparse; the pool is dominated by George)."
+  ],
+  [
+   "Implant survival or revision-free (narrative)",
+   "1 (121 TNFi THA)",
+   "5-year implant survival 96.6%; 3 revisions of 121",
+   "Very low",
+   "Single registry cohort; unmatched and imbalanced comparison plus immortal-time selection; objective revision endpoint. Narrative and synthesis-without-meta-analysis only."
+  ]
+ ],
+ "caption": "Certainty was rated Very low for every outcome. Participant counts are analysis units, because the contributing studies counted procedures, surgeries, or patients and those units are not interchangeable; each cell states the composition. This is a summary of certainty, not an extraction table: study-level event data are given in Table S3, the primary forest plot is Figure 2, and sensitivity and robustness analyses are given in Table S4. The primary comparative estimate is model-dependent, since fixed-effect, Mantel-Haenszel, and Peto models all return about 0.97, and every estimate crosses an odds ratio of 1.",
+ "abbreviations": "Abbreviations: CI, confidence interval; GRADE, Grading of Recommendations Assessment, Development and Evaluation; I2, percentage of variability across studies attributable to heterogeneity rather than chance; k, number of studies; OR, odds ratio; PJI, periprosthetic joint infection; PsA, psoriatic arthritis; SSI, surgical-site infection; THA, total hip arthroplasty; TNFi, tumor necrosis factor inhibitor.",
+ "footnotes": []
+}

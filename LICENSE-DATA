@@ -1,0 +1,91 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+=========================================================
+
+Licensor: Samer G. Salman (2026)
+
+Scope
+-----
+
+Every file in this repository whose name ends in .py, .R or .sh is licensed under the MIT License; every other file in this repository is licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+This licence applies to the non-software content of this repository, namely:
+
+  data/extraction_master.csv        the extracted study-level data
+  data/poolable_dataset.csv         the analysis-ready event counts and
+                                    denominators, with page or table locators
+  data/study_map.csv                the map of included studies to their role
+                                    in the synthesis
+  data/prisma_counts.json           the PRISMA flow counts
+  rob/robins_i_assessments.csv      the ROBINS-I risk-of-bias assessments
+  rob/jbi_assessments.csv           the JBI critical-appraisal assessments
+  outputs/results.json              the generated result set
+  outputs/tables/                   the generated GRADE summary table
+  outputs/supplement/               the generated sensitivity-analysis output
+  outputs/figures/                  the generated figures (PNG and PDF)
+  outputs/static_tables/            the hand-curated and derived summary
+                                    tables (CSV and JSON)
+  environment/R-sessionInfo.txt     the recorded R session information
+
+and the repository documentation and configuration at the root of the
+repository, namely:
+
+  README.md                    the repository documentation
+  CHANGES_FROM_PROJECT.md      the list of changes made to the project files
+                               for this deposit
+  CITATION.cff                 machine-readable citation metadata
+  .zenodo.json                 archive deposition metadata
+  requirements.txt             the recorded Python requirements
+  MANIFEST.sha256              checksums of the deposited files
+  .gitattributes               repository configuration
+  .gitignore                   repository configuration
+
+and, as a catch-all, every other file distributed with this repository that is
+not a source file ending in .py, .R or .sh, so that no file falls outside both
+licence grants.
+
+It does NOT apply to any file whose name ends in .py, .R or .sh, wherever it
+sits in the repository. Those files are licensed under the MIT License; see the
+LICENSE file.
+
+Grant
+-----
+
+These materials are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). You are free to share (copy and redistribute
+in any medium or format) and to adapt (remix, transform, and build upon) the
+material for any purpose, including commercially, provided that you give
+appropriate credit, provide a link to the licence, and indicate if changes were
+made.
+
+The full legal code of the licence is at:
+
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+A human-readable summary (which is not a substitute for the legal code) is at:
+
+  https://creativecommons.org/licenses/by/4.0/
+
+The licence is granted "as is", without warranties of any kind, to the fullest
+extent permitted by law, as set out in the legal code linked above.
+
+Attribution
+-----------
+
+Please credit the author and cite the archived release; the recommended form
+is given in CITATION.cff and in the "How to cite" section of README.md.
+
+Third-party material
+--------------------
+
+This is a systematic review. Every extracted study value in data/extraction_master.csv and
+data/poolable_dataset.csv was taken from a published third-party article,
+and each row names its source study. For every value entered in a
+meta-analysis, the page_cite column of data/poolable_dataset.csv records the
+page or table locator in the source article. The studies that were not pooled
+are identified by study label, journal and year, without a locator.
+
+The extraction, the risk-of-bias judgements and the compilation as a whole are
+the author's own work and are covered by the CC BY 4.0 grant above. The
+underlying articles remain the copyright of their respective publishers. They
+are identified by study label, year and journal, and no article file is distributed in this
+repository.

@@ -1,0 +1,26 @@
+{
+  "upload_type": "software",
+  "title": "Analysis code and study-level data for: Perioperative Biologic Therapy in Psoriasis and Psoriatic Arthritis: A Systematic Review and Meta-analysis of Evidence Relevant to Orthopaedic Surgery",
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Salman, Samer G.",
+      "affiliation": "Baylor College of Medicine, Houston, TX, USA"
+    }
+  ],
+  "description": "<p>Analysis code and study-level data for a systematic review and meta-analysis of perioperative biologic therapy in patients with psoriasis or psoriatic arthritis who undergo surgery that includes orthopaedic procedures, comparing continued with held biologic therapy around surgery for postoperative infection and wound-healing complications and for skin or joint flare.</p><p>The archive contains the R script that fits the random-effects and sensitivity meta-analyses and writes the summary-of-findings table and the forest plots, the Python scripts that draw the PRISMA flow diagram and the risk-of-bias figures, and a single-command driver (run_all.sh) that regenerates the results file, the summary-of-findings table, the sensitivity-analysis output and the figures and compares the regenerated numerical results with the deposited reference file. It also contains the extracted study-level data, the analysis-ready dataset of event counts and denominators with page or table locators for the values entered in a meta-analysis, the ROBINS-I and JBI risk-of-bias assessments, the PRISMA flow counts, the generated result files, and the recorded R session information and Python requirements. The data were extracted from published reports; no patient-level records obtained from investigators or health records are deposited.</p><p>Licensing is mixed, and the record-level licence stated for this deposit (CC BY 4.0) is the one covering the bulk of it. Every file in this repository whose name ends in .py, .R or .sh is licensed under the MIT License; every other file in this repository is licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0). The CC BY 4.0 files include the study-level data, the generated result files, the recorded environment and the repository documentation. The repository carries both licence texts, as LICENSE (MIT) and LICENSE-DATA (CC BY 4.0). The source articles remain the copyright of their publishers; they are identified by study label, year and journal, and no article file is redistributed.</p>",
+  "keywords": [
+    "psoriasis",
+    "psoriatic arthritis",
+    "biologic DMARD",
+    "perioperative management",
+    "surgical-site infection",
+    "total joint arthroplasty",
+    "disease flare",
+    "systematic review",
+    "meta-analysis"
+  ]
+}

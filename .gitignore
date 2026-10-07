@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+outputs/supplement/FigureS1_JBI.png
+outputs/supplement/FigureS1_JBI.pdf

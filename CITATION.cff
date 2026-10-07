@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code or the results archived with it, please cite this record.
+title: >-
+  Analysis code and study-level data for: Perioperative Biologic Therapy in
+  Psoriasis and Psoriatic Arthritis: A Systematic Review and Meta-analysis of
+  Evidence Relevant to Orthopaedic Surgery
+abstract: >-
+  Analysis code and study-level data for a systematic review and meta-analysis
+  of perioperative biologic therapy in patients with psoriasis or psoriatic
+  arthritis who undergo surgery that includes orthopaedic procedures, comparing
+  continued with held biologic therapy around surgery for postoperative
+  infection and wound-healing complications and for skin or joint flare. The
+  repository contains the R script that fits the random-effects and sensitivity
+  meta-analyses and writes the summary-of-findings table and the forest plots,
+  the Python scripts that draw the PRISMA flow diagram and the risk-of-bias
+  figures, and a single-command driver that regenerates the results file, the
+  summary-of-findings table, the sensitivity-analysis output and the figures and
+  compares the regenerated numerical results with the deposited reference file.
+  It also contains the extracted study-level data, the risk-of-bias assessments
+  and the generated results. The data were extracted from published reports;
+  no patient-level records obtained from investigators
+  or health records are deposited. Every file in this repository whose name ends
+  in .py, .R or .sh is licensed under the MIT License; every other file in this
+  repository is licensed under the Creative Commons Attribution 4.0
+  International licence (CC BY 4.0).
+type: software
+version: 1.0.0
+date-released: '2026-10-06'
+license: CC-BY-4.0
+repository-code: 'https://github.com/samersalman/psoriasis-ortho-biologic-meta-analysis'
+# Concept DOI (always resolves to the latest archived version) goes here after the
+# first Zenodo deposit, as:  doi: 10.5281/zenodo.XXXXXXXX
+# A placeholder would fail the CFF 1.2.0 DOI pattern and stop GitHub rendering
+# "Cite this repository"; omitting an optional key does not.
+authors:
+  - given-names: Samer G.
+    family-names: Salman
+    affiliation: Baylor College of Medicine, Houston, TX, USA
+keywords:
+  - psoriasis
+  - psoriatic arthritis
+  - biologic DMARD
+  - perioperative management
+  - surgical-site infection
+  - total joint arthroplasty
+  - disease flare
+  - systematic review
+  - meta-analysis

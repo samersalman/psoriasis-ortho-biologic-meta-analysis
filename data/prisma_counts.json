@@ -1,0 +1,46 @@
+{
+  "identification": {
+    "per_database": {
+      "cochrane_cdsr": 2,
+      "cochrane_central": 112,
+      "embase": 296,
+      "pubmed": 179
+    },
+    "total_records": 589
+  },
+  "deduplication": {
+    "duplicates_removed": 60,
+    "records_after_dedup": 529
+  },
+  "screening": {
+    "records_screened": 529,
+    "exclude_total": 408
+  },
+  "full_text_screening": {
+    "reports_sought_for_retrieval": 121,
+    "reports_not_retrieved": 16,
+    "reports_not_retrieved_breakdown": {
+      "on_no_fulltext_list": 14,
+      "unlisted_missing_flag_PI": 2
+    },
+    "reports_retrieved_from_databases": 103,
+    "reports_assessed_for_eligibility": 107,
+    "reports_excluded_with_reasons": {
+      "total": 91,
+      "by_reason": {
+        "wrong_exposure": 52,
+        "wrong_context_nonortho": 12,
+        "wrong_population": 14,
+        "background_review": 12,
+        "not_english": 1
+      }
+    },
+    "studies_included": 12,
+    "hand_search_records": 4,
+    "ongoing_or_awaiting_classification": {
+      "total": 6,
+      "conference_or_registry_among_assessed": 4,
+      "trial_registry_stubs": 2
+    }
+  }
+}

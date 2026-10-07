@@ -1,0 +1,296 @@
+{
+  "id": "tableS4",
+  "number": "Table S4",
+  "title": "Sensitivity and robustness analyses for all five pooled analyses.",
+  "orientation": "portrait",
+  "target_document": "supplement",
+  "columns": [
+    "Pool and outcome",
+    "Analysis",
+    "Studies (k)",
+    "Pooled estimate (95% CI)",
+    "I2"
+  ],
+  "rows": [
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Primary random-effects model (REML)",
+      "4",
+      "OR 0.50 (95% CI 0.16 to 1.55)",
+      "75.3%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Primary model, 95% prediction interval",
+      "4",
+      "0.06 to 4.37",
+      "Not applicable"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Fixed-effect model",
+      "4",
+      "OR 0.97 (95% CI 0.64 to 1.48)",
+      "Not applicable"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Mantel-Haenszel model",
+      "4",
+      "OR 0.98 (95% CI 0.65 to 1.47)",
+      "78%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Peto model",
+      "4",
+      "OR 0.97 (95% CI 0.64 to 1.49)",
+      "80%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Binomial-normal generalized linear mixed model (UM.FS)",
+      "4",
+      "OR 0.53 (95% CI 0.19 to 1.48)",
+      "67%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Berthold discontinuation arm set to 25 of 872 [a]",
+      "4",
+      "OR 0.51 (95% CI 0.16 to 1.67)",
+      "77%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Fabiano continuation arm set to 0 of 87 [b]",
+      "4",
+      "OR 0.45 (95% CI 0.13 to 1.56)",
+      "78%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Berthold excluded (overlap robustness)",
+      "3",
+      "OR 0.31 (95% CI 0.14 to 0.66)",
+      "0%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Leave-one-out, Bakkour 2016 omitted",
+      "3",
+      "OR 0.70 (95% CI 0.22 to 2.29)",
+      "74%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Leave-one-out, Berthold 2013 omitted",
+      "3",
+      "OR 0.31 (95% CI 0.14 to 0.66)",
+      "0%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Leave-one-out, Fabiano 2014 omitted [c]",
+      "3",
+      "OR 0.55 (95% CI 0.15 to 2.04)",
+      "83%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Leave-one-out, Nguyen 2021 omitted",
+      "3",
+      "OR 0.50 (95% CI 0.10 to 2.52)",
+      "75%"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Subgroup: cohorts confined to psoriasis or PsA (Bakkour 2016, Fabiano 2014)",
+      "2",
+      "OR 0.19 (95% CI 0.05 to 0.68)",
+      "Not reported"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Subgroup: mixed-diagnosis cohorts (Berthold 2013, Nguyen 2021)",
+      "2",
+      "OR 0.85 (95% CI 0.22 to 3.38)",
+      "Not reported"
+    ],
+    [
+      "Infection or wound complications, continue versus hold (MA1)",
+      "Test for subgroup difference",
+      "4",
+      "P = .147",
+      "Not applicable"
+    ],
+    [
+      "Disease flare, continue versus hold (MA2)",
+      "Primary random-effects model (REML) [d]",
+      "2",
+      "OR 0.39 (95% CI 0.06 to 2.43)",
+      "82%"
+    ],
+    [
+      "Disease flare, continue versus hold (MA2)",
+      "Fixed-effect model",
+      "2",
+      "OR 0.50 (95% CI 0.24 to 1.05)",
+      "Not applicable"
+    ],
+    [
+      "Disease flare, continue versus hold (MA2)",
+      "Peto model",
+      "2",
+      "OR 0.48 (95% CI 0.22 to 1.02)",
+      "Not applicable"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Primary logit random-effects model (REML)",
+      "5",
+      "5.7% (95% CI 4.8 to 6.7)",
+      "0%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Freeman-Tukey double-arcsine transformation",
+      "5",
+      "5.3% (95% CI 4.3 to 6.3)",
+      "0.4%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Berthold excluded (overlap robustness)",
+      "4",
+      "5.9% (95% CI 4.8 to 7.3)",
+      "0%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "George whole-cohort serious infection (270 of 4,288)",
+      "5",
+      "6.0% (95% CI 5.2 to 6.9)",
+      "8%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Leave-one-out, Bakkour 2016 omitted",
+      "4",
+      "5.7% (95% CI 4.7 to 6.8)",
+      "0%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Leave-one-out, Berthold 2013 omitted",
+      "4",
+      "5.9% (95% CI 4.8 to 7.3)",
+      "0%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Leave-one-out, Fabiano 2014 omitted",
+      "4",
+      "5.7% (95% CI 4.8 to 6.8)",
+      "0%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Leave-one-out, George 2017 omitted [e]",
+      "4",
+      "5.2% (95% CI 3.9 to 6.8)",
+      "0%"
+    ],
+    [
+      "Infection or wound complication proportion among continuers (MA3)",
+      "Leave-one-out, Nguyen 2021 omitted",
+      "4",
+      "5.6% (95% CI 4.7 to 6.7)",
+      "0%"
+    ],
+    [
+      "Periprosthetic joint infection proportion (MA3)",
+      "Primary logit random-effects model (REML)",
+      "3",
+      "2.4% (95% CI 1.6 to 3.6)",
+      "2%"
+    ],
+    [
+      "Periprosthetic joint infection proportion (MA3)",
+      "Freeman-Tukey double-arcsine transformation",
+      "3",
+      "1.7% (95% CI 0.6 to 3.3)",
+      "31%"
+    ],
+    [
+      "Periprosthetic joint infection proportion (MA3)",
+      "George whole-cohort PJI (105 of 4,288)",
+      "3",
+      "2.4% (95% CI 2.0 to 2.9)",
+      "0%"
+    ],
+    [
+      "Periprosthetic joint infection proportion (MA3)",
+      "Leave-one-out, Borgas 2020 omitted",
+      "2",
+      "2.6% (95% CI 1.8 to 3.6)",
+      "0%"
+    ],
+    [
+      "Periprosthetic joint infection proportion (MA3)",
+      "Leave-one-out, George 2017 omitted [f]",
+      "2",
+      "1.2% (95% CI 0.3 to 4.7)",
+      "0%"
+    ],
+    [
+      "Periprosthetic joint infection proportion (MA3)",
+      "Leave-one-out, Nguyen 2021 omitted",
+      "2",
+      "1.8% (95% CI 0.5 to 5.8)",
+      "48%"
+    ],
+    [
+      "Disease flare proportion by arm (MA4)",
+      "Continuers, primary logit random-effects model (REML)",
+      "2",
+      "9.0% (95% CI 5.5 to 14.4)",
+      "0%"
+    ],
+    [
+      "Disease flare proportion by arm (MA4)",
+      "Discontinuers, primary logit random-effects model (REML)",
+      "2",
+      "20.6% (95% CI 4.1 to 61.0)",
+      "91%"
+    ]
+  ],
+  "caption": "All values are taken directly from the analysis output file; none is recomputed here, and no pre-existing estimate changed when the Fabiano sensitivity analysis was added. Comparative pools report odds ratios and proportion pools report percentages. The primary comparative estimate is model-dependent: the random-effects model down-weights the large Berthold cohort through the between-study variance, whereas the fixed-effect, Mantel-Haenszel, and Peto models all return about 0.97, and every estimate crosses an odds ratio of 1. All pools contain fewer than 10 studies, so funnel plots and Egger tests were underpowered and were not produced, and publication bias was handled qualitatively within GRADE. In both MA1 and the MA3 continuer proportion, the overlap-robustness row and the Berthold 2013 leave-one-out row carry identical values, because omitting Berthold performs both operations at once; they are listed separately because they test different assumptions. The prediction interval for MA2 and MA4 is unstable at k = 2 and is not reported as reliable. Estimates and I2 values are rounded as in the analysis output file. Event-level data are given in Table S3 and the primary forest plot is Figure 2.",
+  "abbreviations": "Abbreviations: CI, confidence interval; GRADE, Grading of Recommendations Assessment, Development and Evaluation; I2, percentage of variability across studies attributable to heterogeneity rather than chance; k, number of studies; MA1 to MA4, the pre-specified pooled analyses; OR, odds ratio; PJI, periprosthetic joint infection; PsA, psoriatic arthritis; REML, restricted maximum likelihood; UM.FS, unconditional model with fixed study effects.",
+  "footnotes": [
+    {
+      "marker": "a",
+      "text": "Berthold's Results narrative on p.497 reports 25 events in the discontinuation arm, whereas Berthold's abstract and the column sum of Berthold's Table 3 both give 28. The primary analysis uses 28 of 872; this row carries the 25 reading. See Table S3, footnote [a]."
+    },
+    {
+      "marker": "b",
+      "text": "A single sentence in Fabiano's narrative states that the 87 continuation patients had no postoperative complications, whereas Fabiano's Table 2, p.S25, records 1 wound infection. The primary analysis uses 1 of 87; this row carries the 0 reading. Because one cell is then zero, a continuity correction was applied in which 0.5 was added to each of the four cells of the Fabiano row, and to that row only. The correction moves the pooled estimate further from the null than the primary estimate while the confidence interval still crosses 1, so it demonstrates additional fragility rather than a different conclusion. This sensitivity applies to the comparative pool only; the continuer proportion pool retains Fabiano at 1 of 87, so the 5.7% proportion and its George-excluded value of 5.2% are unaffected. See Table S3, footnote [c]."
+    },
+    {
+      "marker": "c",
+      "text": "Fabiano's comparative data were pooled in the primary analysis while its reporting quality was appraised with the JBI case-series checklist, because it is published as a short supplement case-series report. This row shows the pooled estimate with Fabiano removed."
+    },
+    {
+      "marker": "d",
+      "text": "Exploratory. Only 2 studies contribute, the flare definitions differ between them, and Vasavada's exposure is aggregate immunosuppression, of which biologics were 31% of the held arm, in arthroscopy rather than arthroplasty. Nguyen cannot join this pool because no continued-arm flare count is reported."
+    },
+    {
+      "marker": "e",
+      "text": "George carries 59.1% of the weight in this pool and its numerator is hospitalized serious infection within 30 days rather than a surgical-site infection, so this row is reported alongside the primary estimate in the Results."
+    },
+    {
+      "marker": "f",
+      "text": "George carries 91.6% of the weight in this pool."
+    }
+  ]
+}

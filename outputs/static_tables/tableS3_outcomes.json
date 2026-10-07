@@ -1,0 +1,189 @@
+{
+  "id": "tableS3",
+  "number": "Table S3",
+  "title": "Outcome event data and reported effect estimates by study and outcome. Event counts for rows entering a pool are identical to the analysis dataset that feeds the forest plots.",
+  "orientation": "landscape",
+  "target_document": "supplement",
+  "columns": [
+    "Study",
+    "Outcome",
+    "Events/N continued",
+    "Events/N discontinued",
+    "Outcome definition and follow-up window",
+    "Reported effect estimate (as published)",
+    "Meta-analysis pool"
+  ],
+  "rows": [
+    [
+      "Berthold 2013",
+      "SSI / wound complication",
+      "35/681",
+      "28/872 [a]",
+      "CDC 1992 SSI, superficial + deep (1-yr window for implant procedures); follow-up mean 5.3 mo",
+      "OR (discontinue vs continue, GEE-corrected) 0.68 (0.38-1.21), P=0.20; crude/design-level (adjusted models 3-6: age, disease duration, MTX, biologic)",
+      "MA1 (infection or wound complications); MA3 (infection or wound complication proportion, continue arm)"
+    ],
+    [
+      "Nguyen 2021",
+      "SSI / wound complication (SSTI)",
+      "9/142",
+      "11/76",
+      "Skin/soft-tissue infection within 90 d necessitating antibiotics (cellulitis/abscess); follow-up 90 d [b]",
+      "P=0.08 (stopped vs continued); crude; no adjusted estimate",
+      "MA1 (infection or wound complications); MA3 (infection or wound complication proportion, continue arm)"
+    ],
+    [
+      "Nguyen 2021",
+      "PJI",
+      "1/43 (all joint replacements)",
+      "single-arm (not split by hold)",
+      "PJI among 43 joint-replacement procedures; follow-up postoperative",
+      "Not reported (single case; PJI on corticosteroid + etanercept)",
+      "MA3 (PJI proportion)"
+    ],
+    [
+      "Bakkour 2016",
+      "SSI / wound complication",
+      "3/57",
+      "5/20",
+      "Postoperative infection or delayed wound healing; follow-up perioperative",
+      "Fisher exact P=0.014 (stopped vs continued); adjusted (logistic for concomitant IS, diabetes, smoking, prophylactic antibiotics; none significant)",
+      "MA1 (infection or wound complications); MA3 (infection or wound complication proportion, continue arm)"
+    ],
+    [
+      "Bakkour 2016",
+      "Disease flare (cutaneous or articular)",
+      "5/57",
+      "8/20",
+      "Physician-observed psoriasis or PsA flare; follow-up perioperative",
+      "Fisher exact P=0.003 (stopped vs continued); crude",
+      "MA2 (disease flare); MA4 (disease flare proportion)"
+    ],
+    [
+      "Fabiano 2014",
+      "SSI / wound complication",
+      "1/87",
+      "2/44",
+      "Postoperative wound infection; follow-up postoperative",
+      "Not reported (crude; no significance test) [c]",
+      "MA1 (infection or wound complications); MA3 (infection or wound complication proportion, continue arm)"
+    ],
+    [
+      "George 2017",
+      "Serious infection (SSI proxy)",
+      "70/1,162 (recent-IFX <4 wk)",
+      "single-arm (proportion; reference 8-12 wk not pooled)",
+      "Hospitalized serious infection within 30 d (bacteremia / SSTI / pneumonia); NOT SSI-specific; follow-up 30 d [d]",
+      "Propensity-adjusted OR (<4 wk vs 8-12 wk) 0.90 (0.60-1.34), ns; adjusted (IPTW, all baseline covariates)",
+      "MA3 (infection or wound complication proportion, continue arm)"
+    ],
+    [
+      "George 2017",
+      "PJI",
+      "30/1,162 (recent-IFX <4 wk)",
+      "single-arm (proportion; reference 8-12 wk not pooled)",
+      "PJI within 1 yr (ICD-9 996.66); follow-up 1 yr (979 person-yr for <4 wk group)",
+      "Propensity-adjusted HR (<4 wk vs 8-12 wk) 0.98 (0.52-1.87), ns; adjusted (IPTW). Whole-cohort alternative 105/4,288 (2.9/100 py)",
+      "MA3 (PJI proportion)"
+    ],
+    [
+      "Borgas 2020",
+      "PJI",
+      "1/157 (TNFi users, continue-only cohort)",
+      "single-arm (no discontinuation arm)",
+      "PJI = deep incisional + organ/space SSI within 1 yr (modified CDC); follow-up 1 yr",
+      "Fisher exact P=0.44 (TNFi-user vs non-user); crude [e]",
+      "MA3 (PJI proportion)"
+    ],
+    [
+      "Vasavada 2023",
+      "Articular (rheumatic-disease) flare",
+      "10/110 (stayed on IS)",
+      "10/104 (held IS)",
+      "Physician-diagnosed rheumatic-disease exacerbation within 12 wk of arthroscopy; follow-up 12 wk",
+      "Multivariable OR (stayed vs held) 0.764 (0.267-2.181), P=0.61; adjusted (age, sex, BMI, smoking, procedure risk, medication class) [f]",
+      "MA2 (disease flare); MA4 (disease flare proportion)"
+    ],
+    [
+      "Di Martino 2023",
+      "Implant survival / revision",
+      "3 revisions/121 (perioperative TNFi)",
+      "not applicable (no discontinuation arm)",
+      "Surgical revision (any component); 5-yr Kaplan-Meier implant survival; follow-up mean 5 yr",
+      "5-yr implant survival 96.6% (89.6-98.9); log-rank P=0.713 vs non-bDMARD, P=0.123 vs OA; propensity-matched OA comparator",
+      "Narrative (not pooled)"
+    ],
+    [
+      "Day 2023",
+      "SSI (lumbar spine)",
+      "NR (regimen-level, not a continue/hold contrast)",
+      "NR",
+      "90-d SSI after single-level lumbar discectomy; follow-up 90 d",
+      "Psoriasis vs non-psoriasis SSI 62/2,262, adjusted OR 1.795 (1.326-2.431), P<0.001; topical+biologics subgroup (n=140) SSI OR 3.102 (1.202-8.010) P=0.019, sepsis OR 6.367 (1.229-32.990) P=0.027 [g]",
+      "Narrative (not pooled)"
+    ],
+    [
+      "Kawakami 2016",
+      "Delayed wound healing + cutaneous flare (orthopaedic case)",
+      "single-arm (0 continued orthopaedic cases)",
+      "1/1 (orthopaedic Case 1, IFX held)",
+      "Delayed wound healing + psoriasis flare (PASI to 18.8) during IFX hold, resolved after IFX restart; follow-up about 7 wk [h]",
+      "Not reported (case)",
+      "Narrative (not pooled)"
+    ],
+    [
+      "Koga 2025",
+      "Wound infection / psoriatic disease flare",
+      "0/1 (adalimumab held 2 wk)",
+      "single-arm (no discontinuation arm)",
+      "Postoperative wound infection or psoriasis exacerbation; follow-up 2 yr",
+      "Not reported (case; no complication over 2 yr)",
+      "Narrative (not pooled)"
+    ],
+    [
+      "Kunimi 2018",
+      "Infection / joint symptom recurrence",
+      "0/1 (IFX continued)",
+      "single-arm (no discontinuation arm)",
+      "Postoperative infection or recurrence of joint symptoms; follow-up NR",
+      "Not reported (case; no complication)",
+      "Narrative (not pooled)"
+    ]
+  ],
+  "caption": "Rows are grouped by study and then by outcome, with studies ordered by their contribution to the synthesis: the 4 comparative-pool studies first, then the studies that contribute only to pooled proportions, then the remaining flare contributor, then the narrative studies. This order differs from Table S1 in the positions of Vasavada 2023, George 2017, and Borgas 2020. Event counts for every row that enters a pool are identical to the analysis dataset used for the forest plots in Figure 2, Figure S3, and Figure S4. MA1, comparative pool for infection or wound complications (continue versus hold); MA2, comparative disease-flare pool; MA3, single-arm proportions among continuers for infection or wound complications and for periprosthetic joint infection; MA4, disease-flare proportions. Under the pre-specified overlap rule, Berthold 2013 contributes to the infection or wound complication pools only and Borgas 2020 to the PJI proportion pool only; they never share a pool. Bakkour's event counts were reconstructed from the percentages published in that report: the infection counts (3 of 57 and 5 of 20) were confirmed against the individual cases listed in Bakkour's Table 2, and the flare counts (5 of 57 and 8 of 20) rest on the published percentages alone. Sensitivity analyses using the alternative event counts described in footnotes [a] and [c] are reported in Table S4. The column headed Reported effect estimate (as published) carries each source article's own published estimate, which may be adjusted and can therefore differ from the crude counts in this table that enter the pools; Vasavada's published multivariable OR of 0.764 is one such case, whereas the crude OR from the events shown here, 0.94, is the value plotted in Figure S4.",
+  "abbreviations": "Abbreviations: bDMARD, biologic disease-modifying antirheumatic drug; BMI, body mass index; CDC, Centers for Disease Control and Prevention; csDMARD, conventional synthetic disease-modifying antirheumatic drug; GEE, generalized estimating equations; HR, hazard ratio; ICD-9, International Classification of Diseases, 9th revision; IFX, infliximab; IPTW, inverse-probability-of-treatment weighting; IS, immunosuppression; JAK, Janus kinase; MTX, methotrexate; ns, not significant; NR, not reported; OA, osteoarthritis; OR, odds ratio; PASI, Psoriasis Area and Severity Index; PJI, periprosthetic joint infection; PsA, psoriatic arthritis; py, person-years; SSI, surgical-site infection; SSTI, skin and soft-tissue infection; TKA, total knee arthroplasty; TNFi, tumor necrosis factor inhibitor.",
+  "footnotes": [
+    {
+      "marker": "a",
+      "text": "Berthold's discontinuation arm is 28 of 872, the value used in the primary analysis and plotted in Figure 2. It is supported by two independent parts of the source article, Berthold's own abstract and the column sum of Berthold's Table 3. Berthold's Results narrative on p.497 instead reports 25; that value is attributed to the Results narrative on p.497 only, because Berthold's Figure 2 is a percent-axis stacked bar chart with no numeric data labels and cannot be the source of a count. A sensitivity analysis using 25 of 872 is reported in Table S4. Berthold's abstract uses a denominator of 870 rather than 872; the two-procedure difference does not affect the odds ratio, and 28 of 872 is retained here so that this table matches the forest plot."
+    },
+    {
+      "marker": "b",
+      "text": "Nguyen values are the whole mixed-surgery cohort (orthopaedic 62 of 218); the stopped-versus-continued comparison is not cross-tabulated within the orthopaedic subset. SSTI is a broader endpoint than CDC SSI."
+    },
+    {
+      "marker": "c",
+      "text": "Fabiano's continuation arm had 1 wound infection among 87 patients, as reported in Fabiano's Table 2, p.S25, and confirmed by that paper's own arithmetic of 3 wound infections in total minus 2 in the interrupted arm. A single sentence in Fabiano's narrative states instead that the 87 continuation patients had no postoperative complications. The value from Fabiano's Table 2, 1 of 87, is the value used here. A sensitivity analysis using 0 of 87 is reported in Table S4; it applies to the primary comparative pool only, and the continuer proportion pool retains Fabiano at 1 of 87."
+    },
+    {
+      "marker": "d",
+      "text": "George numerator is 30-day serious or hospitalized infection, not an SSI-specific outcome; the whole-cohort 90-day SSI figure (80 of 3,996) is not reported by stop-timing and cannot be isolated to the recent-infliximab group."
+    },
+    {
+      "marker": "e",
+      "text": "Borgas: TNFi-user arm of a continue-only cohort. Whole-cohort PJI was 7 of 494, all after TKA; the single PsA PJI (1 of 35) occurred in a patient on no biologic, that is, not a TNFi user."
+    },
+    {
+      "marker": "f",
+      "text": "Vasavada exposure is aggregate immunosuppression (biologics, csDMARDs, JAK inhibitors, glucocorticoids, with biologics 31% of the held arm), not biologic-isolated; the isolated on-biologic OR (0.723, P = .60) most likely codes ever-on-a-biologic."
+    },
+    {
+      "marker": "g",
+      "text": "Day: the topical plus biologics subgroup provides adjusted ORs only, with no events and no denominator reported for the biologic subgroup; exposure is a standing medication-regimen category, and perioperative hold was not determinable."
+    },
+    {
+      "marker": "h",
+      "text": "Kawakami: Case 1 (Achilles tendon repair) was the only orthopaedic case; the three uneventful cases in the series were non-orthopaedic."
+    }
+  ]
+}

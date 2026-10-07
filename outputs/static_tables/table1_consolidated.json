@@ -1,0 +1,159 @@
+{
+  "id": "table1",
+  "number": "Table 1",
+  "title": "Consolidated evidence and applicability of the 12 included studies of perioperative biologic therapy in patients with psoriasis or psoriatic arthritis undergoing surgery.",
+  "orientation": "landscape",
+  "target_document": "main",
+  "columns": [
+    "Study (design, country)",
+    "Population (total N; psoriasis n; PsA n; other)",
+    "Surgery",
+    "Comparison and agents",
+    "Outcomes",
+    "Diagnosis confined to psoriasis or PsA",
+    "Psoriasis or PsA outcomes separable",
+    "Directness and contribution"
+  ],
+  "rows": [
+    [
+      "Bakkour 2016; retrospective audit or cohort at a tertiary psoriasis clinic; United Kingdom",
+      "42 patients, 77 procedures; psoriasis 28 patients (54 procedures); PsA 14 patients (23 procedures); no other diagnoses",
+      "Mixed; orthopaedic 15 of 77 (19.5%), of which 9 continued and 6 stopped; remainder minor or dermatologic",
+      "Continue (57 procedures) versus stop (20 procedures), design level; etanercept, adalimumab, infliximab, ustekinumab, golimumab; single class not isolable",
+      "Infection or delayed wound healing, perioperative; physician-observed psoriasis or PsA flare",
+      "Yes",
+      "Yes (psoriasis- and PsA-specific outcomes reported)",
+      "Direct. Primary comparative pool for infection or wound complications (MA1) and comparative disease-flare pool (MA2), plus single-arm proportions"
+    ],
+    [
+      "Fabiano 2014; retrospective multicenter cohort or case series; Italy",
+      "131 patients; psoriasis 131; PsA 0; no other diagnoses",
+      "58 major procedures (including orthopaedic) and 73 minor procedures; no orthopaedic-only denominator; orthopaedic signal is 2 knee arthroplasty wound infections",
+      "Continue (87 patients) versus discontinue (44 patients) under British Association of Dermatologists guidance, design level; infliximab, adalimumab, etanercept, ustekinumab",
+      "Postoperative wound infection",
+      "Yes",
+      "Yes (pure psoriasis)",
+      "Direct. Primary comparative pool for infection or wound complications (MA1) and continuer proportion"
+    ],
+    [
+      "Day 2023; retrospective case-control administrative database (PearlDiver), 1:4 matched; United States",
+      "2,262 patients with psoriasis matched to 9,044 without psoriasis; psoriasis 2,262; PsA not enumerated; comparator is matched patients without psoriasis",
+      "Single-level lumbar laminotomy or discectomy (spine); 2,262 of 2,262 (100%)",
+      "Recommendation level: a standing medication-regimen category, with perioperative hold not determinable; topical therapy plus biologics subgroup n = 140; class not reported",
+      "Surgical-site infection within 90 days, plus 5-year reoperation",
+      "Yes",
+      "No (PsA not identified; exposure chronic, not perioperative)",
+      "Contextual (indirect). Narrative only, not pooled"
+    ],
+    [
+      "Kawakami 2016; case series (n = 4); Japan",
+      "4 patients with psoriasis receiving a TNF inhibitor (1 psoriasis vulgaris, the orthopaedic Case 1; 3 generalized pustular psoriasis); psoriasis 4; PsA 0; no other diagnoses",
+      "Case 1 Achilles tendon repair (orthopaedic); Cases 2 to 4 non-orthopaedic; orthopaedic 1 of 4",
+      "Discontinued under Japanese Dermatological Association 2013 guidance; infliximab (Case 1) and adalimumab (other cases), with or without methotrexate; 0 continued and 1 discontinued among orthopaedic cases",
+      "Delayed wound healing and cutaneous flare in the orthopaedic case",
+      "Yes",
+      "Yes (case level)",
+      "Case level. Narrative only, not pooled"
+    ],
+    [
+      "Koga 2025; case report (n = 1); Japan",
+      "1 patient with PsA and coexisting knee osteoarthritis (DAPSA 7.24, low activity); psoriasis 0; PsA 1",
+      "Bilateral closed-wedge high tibial osteotomy plus staged implant removals (4 procedures over about 2 years); 1 of 1",
+      "Continued, with adalimumab held for 2 weeks before surgery, a single dosing interval and a short guideline-concordant hold [a]; adalimumab 40 mg every 2 weeks",
+      "Wound infection or psoriatic disease flare over 2 years",
+      "Yes",
+      "Yes (case level)",
+      "Case level. Narrative only, not pooled"
+    ],
+    [
+      "Kunimi 2018; case report or letter (n = 1); Japan",
+      "1 patient with psoriatic arthritis mutilans; psoriasis 0; PsA 1",
+      "Hand surgery (thumb joint fusion plus finger contracture release); 1 of 1",
+      "Continued during regular infliximab treatment; infliximab 5 mg/kg plus methotrexate",
+      "Postoperative infection or recurrence of joint symptoms",
+      "Yes",
+      "Yes (case level)",
+      "Case level. Narrative only, not pooled"
+    ],
+    [
+      "Berthold 2013; retrospective single-center cohort, policy-era comparison; Sweden",
+      "892 patients, 1,596 procedures, of which 1,553 procedures entered the infection analysis; psoriasis not separately enumerated; PsA 32 (4%) in the discontinuation era and 35 (5%) in the continuation era; rheumatoid arthritis about 66% to 67%, spondyloarthritis or ankylosing spondylitis 4%, juvenile idiopathic arthritis 2% to 3%, osteoarthritis 2% to 3%",
+      "Elective orthopaedic and hand surgery (foot, hand, arthroplasty, other); whole cohort orthopaedic",
+      "Design-level policy era: continue (681 procedures) versus discontinue (872 procedures); TNF inhibitors (infliximab, etanercept, adalimumab)",
+      "Surgical-site infection by the CDC 1992 definition, superficial and deep, with a 1-year window for implant procedures; follow-up mean 5.3 months",
+      "No",
+      "No",
+      "Direct. Primary comparative pool for infection or wound complications (MA1, 1,553 procedures) and continuer proportion; pooled at whole-cohort level"
+    ],
+    [
+      "Nguyen 2021; retrospective cross-sectional cohort at 2 tertiary hospitals; United States",
+      "180 patients, 218 procedures (surgical subgroup of 827 biologic users); psoriasis 45 of the 218 surgical procedures (13 stopped, 32 continued) and 27.2% of the 827-patient biologic cohort [b]; PsA 32 of the 218 surgical procedures (12 stopped, 20 continued); inflammatory bowel disease predominant, Crohn disease largest at 38.6% of 827, also ulcerative colitis, rheumatoid arthritis, hidradenitis suppurativa",
+      "Mixed; orthopaedic 62 of 218 (28.4%): joint replacement 43, open reduction and internal fixation 10 (urgent), tendon 9",
+      "Design-level held (76 procedures) versus continued (142 procedures); adalimumab, infliximab, etanercept, ustekinumab",
+      "Skin or soft-tissue infection within 90 days requiring antibiotics; periprosthetic joint infection among the 43 joint-replacement procedures",
+      "No",
+      "No",
+      "Direct. Primary comparative pool for infection or wound complications (MA1, 218 procedures) and PJI proportion; pooled at whole-cohort level"
+    ],
+    [
+      "George 2017; retrospective Medicare claims cohort with propensity score and inverse-probability-of-treatment weighting; United States",
+      "3,867 patients, 4,288 surgeries, all infliximab users; psoriasis, PsA and ankylosing spondylitis combined 562 (13%), with PsA not isolated; rheumatoid arthritis 3,385 (79%), inflammatory bowel disease 475 (11%)",
+      "Elective primary or revision total hip or knee arthroplasty; 4,288 of 4,288 (100%)",
+      "Infliximab stop-timing bins. The within-4-weeks bin (1,162 surgeries) is treated as a continuer proxy; the 8-to-12-week reference arm (747 surgeries) does not enter any pool [c]; infliximab only",
+      "Hospitalized serious infection within 30 days, which is not surgical-site-infection specific; periprosthetic joint infection within 1 year",
+      "No",
+      "No",
+      "Timing-proxy (indirect). Continuer proportion for infection or wound complications (1,162 surgeries) and PJI proportion; whole-cohort level"
+    ],
+    [
+      "Di Martino 2023; registry-based retrospective cohort (RIPO) with a propensity-matched osteoarthritis comparator; Italy",
+      "121 patients on perioperative TNF inhibitor therapy (Cohort A), with comparators of 870 patients on no bDMARD or tsDMARD and 473 with primary osteoarthritis; psoriasis not separately enumerated; PsA 36 (29.8%); rheumatoid arthritis 52.9%, ankylosing spondylitis 17.4%",
+      "Primary total hip arthroplasty; 121 of 121 (100%)",
+      "Perioperative TNF inhibitor use (at least 1 prescription in the 6 months before and after surgery) versus no bDMARD or tsDMARD versus osteoarthritis; no discontinuation arm; etanercept 45.5%, adalimumab 35.5%, infliximab 7.4%, certolizumab 7.4%, golimumab 4.1%",
+      "Surgical revision of any component and 5-year Kaplan-Meier implant survival; follow-up mean 5 years",
+      "No",
+      "No",
+      "Contextual (indirect). Narrative implant-survival evidence, not pooled"
+    ],
+    [
+      "Vasavada 2023; retrospective propensity-matched cohort in arthroscopy and sports medicine; United States",
+      "428 patients, of whom 214 were on baseline immunosuppression (110 stayed on, 104 held) and 214 were not; no cutaneous psoriasis reported; PsA 119 of the 428-patient matched cohort and about 50 within the 214 immunosuppression arms (19% to 28%) [d]; seropositive and seronegative rheumatoid arthritis, sarcoidosis, systemic lupus erythematosus, ankylosing spondylitis, polymyalgia rheumatica",
+      "Arthroscopic sports-medicine procedures; 428 of 428 (100%)",
+      "Stayed on versus held; aggregate immunosuppression (biologics, csDMARDs, JAK inhibitors, glucocorticoids), of which biologics were 31% of the held arm; the biologic effect is not isolable",
+      "Physician-diagnosed rheumatic-disease exacerbation within 12 weeks",
+      "No",
+      "No (exposure is aggregate immunosuppression)",
+      "Direct contrast but aggregate exposure. Comparative disease-flare pool (MA2, 214 patients) and flare proportions; whole-cohort level"
+    ],
+    [
+      "Borgas 2020; retrospective single-arm cohort from a continue-only era; Sweden",
+      "395 patients, 494 primary elective procedures (total knee arthroplasty 254, total hip arthroplasty 240); psoriasis not separately enumerated; PsA 35 (7%); rheumatoid arthritis 341 (69%), spondyloarthritis or ankylosing spondylitis 29 (5.9%), juvenile idiopathic arthritis 59 (11.9%), other 30 (6.1%)",
+      "Primary elective total knee and total hip arthroplasty; 494 of 494 (100%)",
+      "Continue-only cohort comparing TNF inhibitor users with nonusers; TNF inhibitor 157 of 494 (32%): etanercept 93, adalimumab 32, certolizumab 12, infliximab 15, golimumab 5; no discontinuation arm",
+      "Periprosthetic joint infection, defined as deep incisional plus organ or space surgical-site infection within 1 year (modified CDC)",
+      "No",
+      "Partial (PsA-specific PJI 1 of 35 and SSI 2 of 35 reported)",
+      "Contextual (indirect). PJI proportion (TNF inhibitor arm, 157 patients); whole-cohort level"
+    ]
+  ],
+  "caption": "Studies are ordered with the 6 cohorts whose enrolled population was confined to psoriasis or psoriatic arthritis first (Bakkour 2016, Fabiano 2014, Day 2023, Kawakami 2016, Koga 2025, Kunimi 2018), followed by the 6 mixed-diagnosis cohorts (Berthold 2013, Nguyen 2021, George 2017, Di Martino 2023, Vasavada 2023, Borgas 2020). Diagnosis confined to psoriasis or PsA and psoriasis or PsA outcomes separable are two different questions and are reported as two separate columns. They diverge for exactly 2 studies: Day 2023 was confined to psoriasis but its outcomes are not separable to PsA, and Borgas 2020 was not confined to psoriasis or PsA but does report partially separable PsA outcomes. Counts are patients unless procedures, surgeries, or cases are specified. Directness follows the primary comparison: Direct denotes actual continuation versus planned interruption of the same therapy, Timing-proxy denotes a shorter versus longer interval from last dose to surgery, and Contextual denotes biologic users versus nonusers or a chronic-use classification; timing-proxy and contextual studies were treated as indirect. TNF inhibitors were present in all 12 studies and were the only class with cohort-level isolable data, whereas interleukin-12/23 and JAK inhibitors appeared only inside mixed or aggregate exposures, and no study contributed interleukin-17, interleukin-23, or tyrosine kinase 2 inhibitor data. Berthold 2013 and Borgas 2020 share an overlapping Lund and Skane arthroplasty population and never enter the same pool, under the pre-specified overlap rule. Across the 4 studies in the primary comparative pool, 352 of the 1,979 analysis units (17.8%) carried a recorded diagnosis of psoriasis or psoriatic arthritis (Bakkour 77, Fabiano 131, Nguyen 77, Berthold 67); this describes cohort composition only, because in Berthold 2013 and Nguyen 2021 these patients appear in a baseline diagnosis table and their outcomes are not reported separately. The psoriasis- or PsA-specific evidence remains the 208 analysis units (10.5%) contributed by the 2 cohorts composed entirely of patients with psoriasis or PsA, Bakkour 2016 and Fabiano 2014. Full study characteristics are given in Table S1, the evidence-classification matrix in Table S2, and outcome event data in Table S3.",
+  "abbreviations": "Abbreviations: bDMARD, biologic disease-modifying antirheumatic drug; CDC, Centers for Disease Control and Prevention; csDMARD, conventional synthetic disease-modifying antirheumatic drug; DAPSA, Disease Activity in Psoriatic Arthritis; JAK, Janus kinase; MA1, primary comparative pool for infection or wound complications; MA2, comparative disease-flare pool; PJI, periprosthetic joint infection; PsA, psoriatic arthritis; RIPO, Registro dell'Implantologia Protesica Ortopedica; SSI, surgical-site infection; TNF, tumor necrosis factor; tsDMARD, targeted synthetic disease-modifying antirheumatic drug.",
+  "footnotes": [
+    {
+      "marker": "a",
+      "text": "Koga 2025: adalimumab was held for 2 weeks before surgery. This is a single dosing interval and a short guideline-concordant hold rather than uninterrupted continuation."
+    },
+    {
+      "marker": "b",
+      "text": "Nguyen 2021: the 2 psoriasis figures use different denominators. Psoriasis accounted for 27.2% of the 827-patient biologic cohort and for 45 of the 218 surgical procedures that enter the pooled analysis."
+    },
+    {
+      "marker": "c",
+      "text": "George 2017: only the infliximab-within-4-weeks stop-timing bin (1,162 surgeries) enters the pooled proportions, as a continuer proxy. The 8-to-12-week reference arm (747 surgeries) does not enter any pool."
+    },
+    {
+      "marker": "d",
+      "text": "Vasavada 2023: the 2 PsA figures use different denominators. PsA numbered 119 across the 428-patient matched cohort and about 50 within the 214 immunosuppression arms that form the flare pool."
+    }
+  ]
+}
